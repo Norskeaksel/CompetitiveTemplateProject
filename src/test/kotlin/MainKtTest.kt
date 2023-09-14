@@ -6,11 +6,12 @@ import org.junit.jupiter.params.provider.CsvSource
 class MainKtTest {
     @ParameterizedTest
     @CsvSource(
-        "input1, 'answer1'",
-        "input2, 'answer1'",
+        "123, 456, 'No carry operation.'",
+        "555, 555, '3 carry operations.'",
+        "123, 594, '1 carry operation.'",
     )
-    fun testSolve(input: String, expected: String) {
-        val actual = solve(input)
+    fun testSolve(a: Int,  b: Int,  expected: String) {
+        val actual = Main.solve(a, b)
         assertEquals(expected, actual)
     }
 }
