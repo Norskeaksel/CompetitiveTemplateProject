@@ -3,20 +3,20 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Main {
-    public static String solve(int a, int b) {
-        return "Hello, World!";
+
+    public static int solve(int n) {
+        return 0;
     }
 
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         while (true) {
-            String[] inputs = reader.readLine().split(" ");
-            int a = Integer.parseInt(inputs[0]);
-            int b = Integer.parseInt(inputs[1]);
+            String input = reader.readLine();
+            if (input == null || input.isEmpty()) break;
 
-            if (a == 0 && b == 0) break;
-            String ans = solve(a, b);
+            int n = Integer.parseInt(input);
+            int ans = solve(n);
             System.out.println(ans);
         }
     }
