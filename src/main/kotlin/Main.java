@@ -13,7 +13,7 @@ public class Main {
 
         while (true) {
             String input = reader.readLine();
-            if (input == null || input.isEmpty()) break;
+            if (input == null) break;
 
             int n = Integer.parseInt(input);
             int ans = solve(n);
