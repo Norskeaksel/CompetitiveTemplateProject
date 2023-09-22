@@ -1,20 +1,15 @@
 fun readStrings() = readln().split(" ")
-fun readInt() = readln().toInt()
 fun readInts() = readStrings().map { it.toInt() }
-fun readLong() = readln().toLong()
-fun readLongs() = readStrings().map { it.toLong() }
-fun readDouble() = readln().toDouble()
-fun readDoubles() = readStrings().map { it.toDouble() }
 
-fun solve(line:String): String {
+fun solve(a: Int, b: Int): String {
     return ""
 }
 
 fun main() {
-    val n = 1 //readInt()
-    repeat (n) {
-        val line = readln()
-        val ans = solve(line)
+    while (true) {
+        val (a, b) = readInts()
+        if (a == 0 && b == 0) break
+        val ans = solve(a, b)
         println(ans)
     }
 }

@@ -11,7 +11,7 @@ class MainKtTest {
         "123, 594, '1 carry operation.'",
     )
     fun testSolve(a: Int,  b: Int,  expected: String) {
-        val actual = Main.solve(a, b)
+        val actual = solve(a, b)
         assertEquals(expected, actual)
     }
 }
