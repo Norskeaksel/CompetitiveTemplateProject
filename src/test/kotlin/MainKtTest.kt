@@ -7,7 +7,7 @@ class MainKtTest {
     @ParameterizedTest
     @CsvSource(
         "input1, 'answer1'",
-        "input2, 'answer1'",
+        "input2, 'answer2'",
     )
     fun testSolve(input: String, expected: String) {
         val actual = solve(input)
