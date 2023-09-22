@@ -8,5 +8,5 @@ git branch -r | grep -v '\->' | sed "s,\x1B\[[0-9;]*[a-zA-Z],,g" | while read re
 git fetch --all
 git pull --all
 git branch
+# Source: https://stackoverflow.com/questions/10312521/how-do-i-fetch-all-git-branches
 ```
-Source: https://stackoverflow.com/questions/10312521/how-do-i-fetch-all-git-branches
