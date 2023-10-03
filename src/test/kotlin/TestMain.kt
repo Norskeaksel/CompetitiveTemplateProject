@@ -3,14 +3,14 @@ import org.junit.jupiter.params.ParameterizedTest
 import org.junit.jupiter.params.provider.CsvSource
 
 
-class MainKtTest {
+class TestMain {
     @ParameterizedTest
     @CsvSource(
-        "input1, 'answer1'",
-        "input2, 'answer2'",
+        "1, 'answer1'",
+        "2, 'answer2'",
     )
-    fun testSolve(input: String, expected: String) {
-        val actual = solve(input)
+    fun testSolve(input: Int, expected: String) {
+        val actual = Main.solve(input) // Main.solve() for Java file
         assertEquals(expected, actual)
     }
 }
