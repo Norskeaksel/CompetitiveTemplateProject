@@ -6,10 +6,6 @@ fun readLongs() = readStrings().map { it.toLong() }
 fun readDouble() = readln().toDouble()
 fun readDoubles() = readStrings().map { it.toDouble() }
 
-fun solve(line:String): String {
-    return ""
-}
-
 fun main() {
     val n = 1 //readInt()
     repeat (n) {
@@ -18,3 +14,8 @@ fun main() {
         println(ans)
     }
 }
+
+fun solve(line:String): String {
+    return ""
+}
+
